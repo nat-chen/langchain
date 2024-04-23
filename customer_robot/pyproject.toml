@@ -1,0 +1,28 @@
+[project]
+name = "consumer_robot"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Nat Chen", email = "chen_natalie@outlook.com"},
+]
+dependencies = [
+    "langchain==0.1.13",
+    "bs4>=0.0.2",
+    "chromadb>=0.4.22",
+    "langchainhub>=0.1.14",
+    "langserve>=0.1.0",
+    "sse-starlette>=2.0.0",
+    "langchain-openai>=0.0.5",
+    "fastapi>=0.110.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
